@@ -94,13 +94,13 @@ function showBadge(container, data) {
 }
 
 function processContainer(container) {
-  // Skip playlists and mixes ΓÇö their stats would be misleading
+  // Skip playlists and mixes — their stats would be misleading
   if (isPlaylistOrMix(container)) return;
 
   const videoId = getVideoId(container);
   if (!videoId) return;
 
-  // Already processed same video ΓÇö restore badge if missing
+  // Already processed same video — restore badge if missing
   if (container.getAttribute(DONE_ATTR) === videoId) {
     const meta = getMetaLine(container);
     if (meta && !meta.querySelector('.' + BADGE_CLASS)) {
@@ -153,13 +153,13 @@ function injectWatchDislike(data) {
 
   const likeSpan = document.createElement('span');
   likeSpan.className = 'ytel-like';
-  likeSpan.textContent = '≡ƒæì ' + fmt(likes);
+  likeSpan.textContent = '👍 ' + fmt(likes);
 
   const dislikeSpan = document.createElement('span');
   dislikeSpan.className = 'ytel-dislike';
-  dislikeSpan.textContent = '≡ƒæÄ ' + fmt(dislikes);
+  dislikeSpan.textContent = '👎 ' + fmt(dislikes);
 
-  countEl.appendChild(document.createTextNode('ΓÇó  '));
+  countEl.appendChild(document.createTextNode('•  '));
   countEl.appendChild(likeSpan);
   countEl.appendChild(document.createTextNode('   '));
   countEl.appendChild(dislikeSpan);
@@ -269,7 +269,7 @@ function scanAll() {
   const containers = document.querySelectorAll(SELECTORS);
   containers.forEach(processContainer);
 
-  // Sidebar recommendations (watch page) ΓÇö these use yt-lockup-view-model
+  // Sidebar recommendations (watch page) — these use yt-lockup-view-model
   // directly, not wrapped in ytd-compact-video-renderer anymore
   if (location.pathname === '/watch') {
     const sidebar = document.querySelector('ytd-watch-next-secondary-results-renderer');
