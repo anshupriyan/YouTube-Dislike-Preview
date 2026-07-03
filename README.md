@@ -1,89 +1,41 @@
-<div align="center">
-  <img src="assets/logo.png" alt="YT Dislike Preview Logo" width="80" height="80" style="border-radius: 16px;" />
-  <h1>YT Dislike Preview</h1>
-  <p><strong>Restoring visibility into dislike counts YouTube hid — instantly, natively, and seamlessly.</strong></p>
+# 📊 YT Dislike Preview
 
-  [![License: MIT](https://img.shields.io/badge/License-MIT-red.svg)](https://opensource.org/licenses/MIT)
-  [![Manifest](https://img.shields.io/badge/Manifest-V3-brightgreen.svg)](#)
-  [![Stars](https://img.shields.io/github/stars/anshupriyan/yt-engagement-lens.svg?style=social)](https://github.com/anshupriyan/yt-engagement-lens/stargazers)
-  [![Forks](https://img.shields.io/github/forks/anshupriyan/yt-engagement-lens.svg?style=social)](https://github.com/anshupriyan/yt-engagement-lens/network/members)
-</div>
-
----
-
-<div align="center">
-  <img width="258" height="262" alt="image" src="https://github.com/user-attachments/assets/d9f7b77d-7518-4a00-9c79-5b0dfead7b46" />
-  <img width="402" height="302" alt="image" src="https://github.com/user-attachments/assets/ab1c8726-28d5-4893-8477-2de42f002466" />
-
-
-</div>
-
-## 💡 Why This Exists
-
-In 2021, YouTube made the controversial decision to hide public dislike counts, removing a critical tool for community feedback and content quality validation. **YT Dislike Preview** brings this visibility back. By leveraging the open Return YouTube Dislike dataset, this extension helps you evaluate video quality in under a second before you invest time watching.
-
----
+A lightweight Chrome Extension (Manifest V3) that displays like/dislike counts and ratios for YouTube videos.
 
 ## ✨ Features
 
-*   **Thumbnail Overlays:** Save time by viewing like and dislike counts inline as native-looking metadata directly on video thumbnails across your home feed, search results, sidebar recommendations, channels, and playlists.
-*   **Watch Page Metrics:** Restore full context with the exact dislike counts placed cleanly below the video description area for a native-feeling experience.
-*   **YouTube Shorts Integration:** Bring back dislike counts on the YouTube Shorts sidebar action buttons.
-*   **Zero Configuration:** Start instantly. The extension works out-of-the-box using the public Return YouTube Dislike database with no manual configuration needed.
-*   **Lightweight & Privacy-First:** Built entirely on vanilla JavaScript and CSS to minimize browser memory footprint, featuring a fully security-hardened Manifest V3 codebase.
-
-<div align="center">
-  <img width="485" height="357" alt="image" src="https://github.com/user-attachments/assets/d06ca981-60c1-4fd8-8aff-593fc1291ece" />
-  <img width="306" height="328" alt="image" src="https://github.com/user-attachments/assets/f8ba38c6-35c3-4a28-9305-69f5939a5c6e" />
-
-
-</div>
----
+* **Thumbnail Overlays:** Displays like/dislike counts directly on video thumbnails (home feed, search results, sidebar recommendations, channels, and playlists).
+* **Watch Page Metrics:** Displays like/dislike counts on the watch page below the video description.
+* **YouTube Shorts Integration:** Restores dislike counts on the YouTube Shorts sidebar action buttons.
+* **Zero Configuration:** Works out-of-the-box using the public Return YouTube Dislike API.
+* **Lightweight:** Built with vanilla JavaScript and CSS to minimize browser memory footprint.
 
 ## 🛠️ Installation (Developer Mode)
 
-Since this extension is in active development:
+To load the extension locally during development:
 
-1.  **Clone this repository:**
-    ```bash
-    git clone https://github.com/anshupriyan/YT-Dislike-Preview.git
-    ```
-2.  Open Google Chrome and navigate to `chrome://extensions/`.
-3.  Enable **Developer mode** (toggle in the top-right corner).
-4.  Click **Load unpacked** (top-left corner).
-5.  Select the root folder containing the `manifest.json` file.
-
-*Note: A Chrome Web Store launch is planned! [Placeholder for Store Link]*
-
----
+1. **Clone this repository:**
+   ```bash
+   git clone https://github.com/anshupriyan/YT-Dislike-Preview.git
+   ```
+2. Open Google Chrome and navigate to `chrome://extensions/`.
+3. Enable **Developer mode** (toggle in the top-right corner).
+4. Click **Load unpacked** (top-left corner).
+5. Select the root folder containing the `manifest.json` file.
 
 ## ⚙️ How It Works
 
-A lightweight content script ([content.js](content.js)) scans YouTube's elements and injects native-feeling dislike badges. A background service worker ([background.js](background.js)) securely proxies requests to the Return YouTube Dislike API, validating all inputs and caching votes in memory to prevent redundant queries and ensure instantaneous rendering.
-
----
+* **Content Script (`content.js`):** Injects dislike badges into YouTube's user interface.
+* **Background Service Worker (`background.js`):** Interacts with the Return YouTube Dislike API and caches votes in-memory to prevent redundant network requests.
 
 ## 💬 Support This Project
 
-*   **Discord:** [Join our community](https://discord.gg/9DZxKzxuJc) to chat, ask questions, or report bugs.
-*   **Buy Me a Chai:** [Support the project via Razorpay](https://razorpay.me/@anshupriyan)
-
----
-
-## 🤝 Contributing
-
-Contributions, issues, and feature requests are welcome! Feel free to open an issue first to discuss larger modifications before making a PR.
-
----
+* **Discord:** [Join the community](https://discord.gg/9DZxKzxuJc)
+* **Buy Me a Chai:** [Support the project via Razorpay](https://razorpay.me/@anshupriyan)
 
 ## 📊 Attribution & Data Source
 
-This project uses the public API provided by [Return YouTube Dislike](https://returnyoutubedislike.com/). We would like to attribute and thank the Return YouTube Dislike project and its contributors for their excellent work and for making this data available. 
-
-*   **Website:** [returnyoutubedislike.com](https://returnyoutubedislike.com/)
-*   **Source Code:** [Anarios/return-youtube-dislike on GitHub](https://github.com/Anarios/return-youtube-dislike)
-
----
+This project retrieves vote data using the public API provided by [Return YouTube Dislike](https://returnyoutubedislike.com/). 
 
 ## 🛡️ License
 
