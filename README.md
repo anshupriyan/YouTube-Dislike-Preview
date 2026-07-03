@@ -1,6 +1,20 @@
-# 📊 YT Dislike Preview
+<div align="center">
+  <img src="assets/logo.png" alt="YT Dislike Preview Logo" width="80" height="80" style="border-radius: 16px;" />
+  <h1>YT Dislike Preview</h1>
+  <p><strong>A lightweight Chrome Extension (Manifest V3) that displays like/dislike counts and ratios for YouTube videos.</strong></p>
 
-A lightweight Chrome Extension (Manifest V3) that displays like/dislike counts and ratios for YouTube videos.
+  [![License: MIT](https://img.shields.io/badge/License-MIT-red.svg)](https://opensource.org/licenses/MIT)
+  [![Manifest](https://img.shields.io/badge/Manifest-V3-brightgreen.svg)](#)
+  [![Stars](https://img.shields.io/github/stars/anshupriyan/yt-engagement-lens.svg?style=social)](https://github.com/anshupriyan/yt-engagement-lens/stargazers)
+  [![Forks](https://img.shields.io/github/forks/anshupriyan/yt-engagement-lens.svg?style=social)](https://github.com/anshupriyan/yt-engagement-lens/network/members)
+</div>
+
+---
+
+<div align="center">
+  <img width="258" height="262" alt="image" src="https://github.com/user-attachments/assets/d9f7b77d-7518-4a00-9c79-5b0dfead7b46" />
+  <img width="402" height="302" alt="image" src="https://github.com/user-attachments/assets/ab1c8726-28d5-4893-8477-2de42f002466" />
+</div>
 
 ## ✨ Features
 
@@ -9,6 +23,11 @@ A lightweight Chrome Extension (Manifest V3) that displays like/dislike counts a
 * **YouTube Shorts Integration:** Restores dislike counts on the YouTube Shorts sidebar action buttons.
 * **Zero Configuration:** Works out-of-the-box using the public Return YouTube Dislike API.
 * **Lightweight:** Built with vanilla JavaScript and CSS to minimize browser memory footprint.
+
+<div align="center">
+  <img width="485" height="357" alt="image" src="https://github.com/user-attachments/assets/d06ca981-60c1-4fd8-8aff-593fc1291ece" />
+  <img width="306" height="328" alt="image" src="https://github.com/user-attachments/assets/f8ba38c6-35c3-4a28-9305-69f5939a5c6e" />
+</div>
 
 ## 🛠️ Installation (Developer Mode)
 
