@@ -1,8 +1,8 @@
 {
   "manifest_version": 3,
-  "name": "YT Dislike Preview",
-  "version": "1.0.0",
-  "description": "Bring back YouTube dislike counts as a thumbnail preview — likes, dislikes, and engagement ratio, no API key required.",
+  "name": "Youtube Dislike Preview",
+  "version": "1.0.1",
+  "description": "See likes & dislikes on every YouTube thumbnail — instantly, no clicking required.",
   "background": {
     "service_worker": "background.js"
   },
@@ -12,15 +12,21 @@
   ],
   "content_scripts": [
     {
-      "matches": ["https://www.youtube.com/*"],
-      "js": ["content.js"],
-      "css": ["overlay.css"],
+      "matches": [
+        "https://www.youtube.com/*"
+      ],
+      "js": [
+        "content.js"
+      ],
+      "css": [
+        "overlay.css"
+      ],
       "run_at": "document_idle"
     }
   ],
   "action": {
     "default_popup": "popup.html",
-    "default_title": "YT Dislike Preview",
+    "default_title": "Youtube Dislike Preview",
     "default_icon": {
       "16": "icons/icon16.png",
       "48": "icons/icon48.png",
