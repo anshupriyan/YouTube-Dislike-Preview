@@ -1,14 +1,11 @@
 {
   "manifest_version": 3,
   "name": "YouTube Dislike Preview",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "See likes & dislikes on every YouTube thumbnail — instantly, no clicking required.",
   "background": {
     "service_worker": "background.js"
   },
-  "permissions": [
-    "tabs"
-  ],
   "host_permissions": [
     "https://returnyoutubedislikeapi.com/*"
   ],
