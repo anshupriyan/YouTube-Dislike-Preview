@@ -32,7 +32,7 @@
 ## 📥 Installation
 
 ### 🌐 Chrome Web Store
-You can install the extension directly from the [Chrome Web Store](https://chromewebstore.google.com/detail/yt-dislike-preview/ngejddpgnbelgdlbncnmneoodhpgfefd).
+You can install the extension directly from the [Chrome Web Store](https://chromewebstore.google.com/detail/youtube-dislike-preview/ngejddpgnbelgdlbncnmneoodhpgfefd)
 
 ### 🛠️ Developer Mode (Manual Installation)
 To load the extension locally during development:
